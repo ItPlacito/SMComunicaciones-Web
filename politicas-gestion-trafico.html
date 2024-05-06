@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>SM Comunicaciones - Póliticas De Gestión De Tráfico</title>
+    <meta name="description"
+        content="SM Comunicaciones ofrece servicios de sistemas de comunicación de calidad, incluyendo reparaciones, mantenimiento, cámaras de video vigilancia, enlaces inalámbricos, sistemas de energía solar, venta y renta de sistemas de comunicación.">
+    <meta name="keywords"
+        content="SM Comunicaciones, comunicación, reparaciones, mantenimiento, cámaras de video vigilancia, enlaces inalámbricos, energía solar, venta, renta">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        <!--
+        /* Font Definitions */
+        @font-face {
+            font-family: "Cambria Math";
+            panose-1: 2 4 5 3 5 4 6 3 2 4;
+            mso-font-charset: 0;
+            mso-generic-font-family: roman;
+            mso-font-pitch: variable;
+            mso-font-signature: -536870145 1107305727 0 0 415 0;
+        }
+
+        @font-face {
+            font-family: Calibri;
+            panose-1: 2 15 5 2 2 2 4 3 2 4;
+            mso-font-charset: 0;
+            mso-generic-font-family: swiss;
+            mso-font-pitch: variable;
+            mso-font-signature: -536859905 -1073732485 9 0 511 0;
+        }
+
+        @font-face {
+            font-family: Georgia;
+            panose-1: 2 4 5 2 5 4 5 2 3 3;
+            mso-font-charset: 0;
+            mso-generic-font-family: roman;
+            mso-font-pitch: variable;
+            mso-font-signature: 647 0 0 0 159 0;
+        }
+
+        /* Style Definitions */
+        p.MsoNormal,
+        li.MsoNormal,
+        div.MsoNormal {
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-parent: "";
+            margin-top: 0cm;
+            margin-right: 0cm;
+            margin-bottom: 8.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+            mso-fareast-font-family: Calibri;
+        }
+
+        h1 {
+            mso-style-priority: 9;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-next: Normal;
+            margin-top: 12.0pt;
+            margin-right: 0cm;
+            margin-bottom: 0cm;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 1;
+            font-size: 16.0pt;
+            font-family: "Calibri", sans-serif;
+            color: #2F5496;
+            mso-font-kerning: 0pt;
+            font-weight: normal;
+        }
+
+        h2 {
+            mso-style-noshow: yes;
+            mso-style-priority: 9;
+            mso-style-qformat: yes;
+            mso-style-next: Normal;
+            margin-top: 18.0pt;
+            margin-right: 0cm;
+            margin-bottom: 4.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 2;
+            font-size: 18.0pt;
+            font-family: "Calibri", sans-serif;
+            mso-bidi-font-weight: normal;
+        }
+
+        h3 {
+            mso-style-noshow: yes;
+            mso-style-priority: 9;
+            mso-style-qformat: yes;
+            mso-style-next: Normal;
+            margin-top: 14.0pt;
+            margin-right: 0cm;
+            margin-bottom: 4.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 3;
+            font-size: 14.0pt;
+            font-family: "Calibri", sans-serif;
+            mso-bidi-font-weight: normal;
+        }
+
+        h4 {
+            mso-style-noshow: yes;
+            mso-style-priority: 9;
+            mso-style-qformat: yes;
+            mso-style-next: Normal;
+            margin-top: 12.0pt;
+            margin-right: 0cm;
+            margin-bottom: 2.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 4;
+            font-size: 12.0pt;
+            font-family: "Calibri", sans-serif;
+            mso-bidi-font-weight: normal;
+        }
+
+        h5 {
+            mso-style-noshow: yes;
+            mso-style-priority: 9;
+            mso-style-qformat: yes;
+            mso-style-next: Normal;
+            margin-top: 11.0pt;
+            margin-right: 0cm;
+            margin-bottom: 2.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 5;
+            font-size: 11.0pt;
+            font-family: "Calibri", sans-serif;
+            mso-bidi-font-weight: normal;
+        }
+
+        h6 {
+            mso-style-noshow: yes;
+            mso-style-priority: 9;
+            mso-style-qformat: yes;
+            mso-style-next: Normal;
+            margin-top: 10.0pt;
+            margin-right: 0cm;
+            margin-bottom: 2.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            mso-outline-level: 6;
+            font-size: 10.0pt;
+            font-family: "Calibri", sans-serif;
+            mso-bidi-font-weight: normal;
+        }
+
+        p.MsoTitle,
+        li.MsoTitle,
+        div.MsoTitle {
+            mso-style-priority: 10;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-next: Normal;
+            margin-top: 24.0pt;
+            margin-right: 0cm;
+            margin-bottom: 6.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            font-size: 36.0pt;
+            font-family: "Calibri", sans-serif;
+            mso-fareast-font-family: Calibri;
+            font-weight: bold;
+            mso-bidi-font-weight: normal;
+        }
+
+        p.MsoSubtitle,
+        li.MsoSubtitle,
+        div.MsoSubtitle {
+            mso-style-priority: 11;
+            mso-style-unhide: no;
+            mso-style-qformat: yes;
+            mso-style-next: Normal;
+            margin-top: 18.0pt;
+            margin-right: 0cm;
+            margin-bottom: 4.0pt;
+            margin-left: 0cm;
+            line-height: 107%;
+            mso-pagination: widow-orphan lines-together;
+            page-break-after: avoid;
+            font-size: 24.0pt;
+            font-family: "Georgia", serif;
+            mso-fareast-font-family: Georgia;
+            mso-bidi-font-family: Georgia;
+            color: #666666;
+            font-style: italic;
+            mso-bidi-font-style: normal;
+        }
+
+        .MsoChpDefault {
+            mso-style-type: export-only;
+            mso-default-props: yes;
+            font-size: 11.0pt;
+            mso-ansi-font-size: 11.0pt;
+            mso-bidi-font-size: 11.0pt;
+            mso-ascii-font-family: Calibri;
+            mso-fareast-font-family: Calibri;
+            mso-hansi-font-family: Calibri;
+            mso-bidi-font-family: Calibri;
+            mso-font-kerning: 0pt;
+            mso-ligatures: none;
+        }
+
+        .MsoPapDefault {
+            mso-style-type: export-only;
+            margin-bottom: 8.0pt;
+            line-height: 107%;
+        }
+
+        @page WordSection1 {
+            size: 612.0pt 792.0pt;
+            margin: 70.85pt 3.0cm 70.85pt 3.0cm;
+            mso-header-margin: 35.4pt;
+            mso-footer-margin: 35.4pt;
+            mso-page-numbers: 1;
+            mso-paper-source: 0;
+        }
+
+        div.WordSection1 {
+            page: WordSection1;
+        }
+
+        /* List Definitions */
+        @list l0 {
+            mso-list-id: 1416778247;
+            mso-list-template-ids: 1378278112;
+        }
+
+        @list l0:level1 {
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            text-indent: -18.0pt;
+            mso-ansi-font-weight: bold;
+            mso-ansi-font-style: normal;
+        }
+
+        @list l0:level2 {
+            mso-level-number-format: alpha-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            text-indent: -18.0pt;
+        }
+
+        @list l0:level3 {
+            mso-level-number-format: roman-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: right;
+            text-indent: -9.0pt;
+        }
+
+        @list l0:level4 {
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            text-indent: -18.0pt;
+        }
+
+        @list l0:level5 {
+            mso-level-number-format: alpha-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            text-indent: -18.0pt;
+        }
+
+        @list l0:level6 {
+            mso-level-number-format: roman-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: right;
+            text-indent: -9.0pt;
+        }
+
+        @list l0:level7 {
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            text-indent: -18.0pt;
+        }
+
+        @list l0:level8 {
+            mso-level-number-format: alpha-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: left;
+            text-indent: -18.0pt;
+        }
+
+        @list l0:level9 {
+            mso-level-number-format: roman-lower;
+            mso-level-tab-stop: none;
+            mso-level-number-position: right;
+            text-indent: -9.0pt;
+        }
+
+        ol {
+            margin-bottom: 0cm;
+        }
+
+        ul {
+            margin-bottom: 0cm;
+        }
+        -->
+    </style>
+    <!--[if gte mso 10]>
+        <style>
+         /* Style Definitions */
+         table.MsoNormalTable
+            {mso-style-name:"Tabla normal";
+            mso-tstyle-rowband-size:0;
+            mso-tstyle-colband-size:0;
+            mso-style-noshow:yes;
+            mso-style-priority:99;
+            mso-style-parent:"";
+            mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+            mso-para-margin-top:0cm;
+            mso-para-margin-right:0cm;
+            mso-para-margin-bottom:8.0pt;
+            mso-para-margin-left:0cm;
+            line-height:107%;
+            mso-pagination:widow-orphan;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        table.TableNormal
+            {mso-style-name:"Table Normal";
+            mso-tstyle-rowband-size:0;
+            mso-tstyle-colband-size:0;
+            mso-style-unhide:no;
+            mso-style-parent:"";
+            mso-padding-alt:0cm 0cm 0cm 0cm;
+            mso-para-margin-top:0cm;
+            mso-para-margin-right:0cm;
+            mso-para-margin-bottom:8.0pt;
+            mso-para-margin-left:0cm;
+            line-height:107%;
+            mso-pagination:widow-orphan;
+            font-size:11.0pt;
+            font-family:"Calibri",sans-serif;}
+        </style>
+        <![endif]-->
+</head>
+
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1>SM COMUNICACIONES<span>.</span></h1>
+            </a>
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs d-flex align-items-center"
+            style="background-image: url('assets/img/breadcrumbs-bg.jpg');">
+            <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+                <h2>PÓLITICAS DE GESTIÓN DE TRÁFICO</h2>
+                <ol>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li>PÓLITICAS DE GESTIÓN DE TRÁFICO</li>
+                </ol>
+
+            </div>
+        </div><!-- End Breadcrumbs -->
+
+        <!-- ======= Derechos Minimos Section ======= -->
+        <section id="cartaDerechos" class="cartaDerechos">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class=WordSection1>
+
+                    <h1 align=center style='text-align:center'><b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;line-height:107%;mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO Y
+                                ADMINISTRACIÓN DE RED PARA EL SERVICIO DE ACCESO A INTERNET DE CORPORATIVO
+                                GLOBE-IT, S.A. DE C.V.<o:p></o:p></span></b></h1>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal style='text-align:justify;text-indent:35.4pt;line-height:
+150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>Con fundamento en el artículo 12 del “Acuerdo
+                            mediante el cual el Pleno del Instituto Federal de Telecomunicaciones expide
+                            los Lineamientos para la gestión de tráfico y administración de red a que
+                            deberán sujetarse los concesionarios y autorizados que presten el servicio de
+                            acceso a Internet”, en lo sucesivo, “El acuerdo”; CORPORATIVO GLOBE-IT, S.A. DE
+                            C.V. (en lo sucesivo “proveedor”) pone a disposición de sus usuarios el Código
+                            de Política de Gestión de Tráfico y Administración de Red (en adelante “Código)
+                            por el cual da a conocer los principios bajo los cuales implementa la gestión
+                            de tráfico y administración de red que presta a sus usuarios:<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>1.- DERECHOS
+                                DE LOS USUARIOS FINALES DEL SERVICIO DE ACCESO A INTERNET<o:p></o:p></span></b></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>El servicio de acceso de internet se sujetará
+                            a los siguientes principios señalados en el artículo 145 de la Ley Federal de
+                            Telecomunicaciones y Radiodifusión:<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>I.<span style='mso-tab-count:1'>          
+                                </span>Libre elección</span></b><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>. Los usuarios de los servicios de internet
+                            prestados por el proveedor pueden acceder a cualquier contenido, aplicación o
+                            servicio ofrecido por los concesionarios o por los autorizados a comercializar,
+                            dentro del marco legal aplicable, sin limitar, degradar, restringir o
+                            discriminar el acceso a los mismos.<b style='mso-bidi-font-weight:normal'>
+                                <o:p></o:p>
+                            </b></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'><span style='mso-tab-count:1'>             </span>El
+                            proveedor no limita el derecho de los usuarios del servicio de acceso a
+                            Internet a incorporar o utilizar cualquier clase de instrumentos, dispositivos
+                            o aparatos que se conecten a su red, siempre y cuando éstos se encuentren
+                            homologados, tomando en cuenta que no todos los dispositivos existentes en el
+                            mercado cuentan con las caracterizarías técnicas para poder ser conectados a su
+                            red. <o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>II.<span style='mso-tab-count:1'>          </span>No
+                                discriminación.</span></b><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'> El proveedor se abstiene de obstruir,
+                            interferir, inspeccionar, filtrar o discriminar contenidos, aplicaciones o
+                            servicio;<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>III.<span style='mso-tab-count:1'>        
+                                </span>Privacidad</span></b><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>. El proveedor preserva la privacidad de los
+                            usuarios y la seguridad de la red;<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>IV.<span style='mso-tab-count:1'>        
+                                </span>Transparencia e información.</span></b><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'> Las características del servicio ofrecido,
+                            incluyendo las políticas de gestión de tráfico y administración de red
+                            autorizada por el Instituto, velocidad, calidad, la naturaleza y garantía del
+                            servicio, se pueden consultar en la página de internet y en el Código de
+                            prácticas comerciales del proveedor<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>
+                                <o:p>&nbsp;</o:p>
+                            </span></b></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>V.<span style='mso-tab-count:1'>         
+                                </span>Gestión de tráfico.</span></b><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'> El proveedor podrá tomar las medidas o
+                            acciones necesarias para la gestión de tráfico y administración de red conforme
+                            a las políticas autorizadas por el Instituto, a fin de garantizar la calidad o
+                            la velocidad de servicio contratada por el usuario, siempre que ello no
+                            constituya una práctica contraria a la sana competencia y libre concurrencia;<o:p></o:p>
+                            </span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>VI.<span style='mso-tab-count:1'>        
+                                </span>Calidad</span></b><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>. El proveedor debe preservar los niveles
+                            mínimos de calidad que al efecto se establezcan en los lineamientos
+                            respectivos, y<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:54.0pt;text-align:justify;text-indent:-39.6pt;line-height:150%;
+border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>2. MEDIDAS DE
+                                GESTIÓN DE TRÁFICO<o:p></o:p></span></b></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>2.1
+                                Administración de Direcciones IP<o:p></o:p></span></b></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>Una dirección IP es una dirección única que
+                            identifica a un dispositivo en internet o en una red local, con lo cual permite
+                            el intercambio de información en internet.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>Los organismos internacionales asignan a los
+                            Proveedores de Servicios de Internet (ISP) direcciones IPs públicas para
+                            permitir que sus usuarios se comuniquen por internet. Considerando que las
+                            direcciones IP son un recurso escaso y limitado, se vuelve necesaria su
+                            administración para optimizar su uso. Es por eso que el proveedor utiliza
+                            técnicas que permiten a múltiples dispositivos en una red local ser mapeados a
+                            una sola dirección IP Pública.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>Los beneficios son:<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-align:justify;line-height:150%'><span style='mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;
+mso-hansi-font-family:Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>•
+                            Optimización en el uso de un recurso finito como son las direcciones IP
+                            públicas.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-align:justify;line-height:150%'><span style='mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;
+mso-hansi-font-family:Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>•
+                            Ocupación innecesaria de direcciones IP públicas.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-align:justify;line-height:150%'><span style='mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;
+mso-hansi-font-family:Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>•
+                            Agotamiento de las direcciones IP públicas.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:12.0pt;text-align:justify;line-height:
+150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>En caso de que esta medida se elimine
+                            ocurrirá lo siguiente:<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-align:justify;line-height:150%'><span style='mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;
+mso-hansi-font-family:Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>•
+                            Ocupación innecesaria de direcciones IP públicas.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-align:justify;line-height:150%'><span style='mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;
+mso-hansi-font-family:Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>•
+                            Agotamiento de las direcciones IP públicas.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:35.4pt;text-align:justify;line-height:150%'><span style='mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;
+mso-hansi-font-family:Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:
+Calibri;mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>2.2
+                                Administración de Routers<o:p></o:p></span></b></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>Los Router CCR administrados por segmentos
+                            VLAN que permiten la gestión adecuada del tráfico, así como la asignación de
+                            prioridades de tráfico, mantienen configuración personalizada en las reglas de
+                            queue simple y queue tree, de esa forma garantizar la asignación de ancho de
+                            banda a cada usuario y prioridad en la calidad de acuerdo con cada una de las
+                            necesidades.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>De esta forma los Router CCR de servicio
+                            mantienen la comunicación activa con el sistema administrativo de suscriptores
+                            para la perfecta administración automatizada, y garantizar toda la gestión
+                            correcta evitando actividades manuales que pongan el peligro el flujo adecuado
+                            de una administración correctamente centralizada.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>3.
+                                RECOMENDACIONES A USUARIOS FINALES<o:p></o:p></span></b></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>Las recomendaciones para que los usuarios
+                            finales minimicen los riesgos a su privacidad y la de sus comunicaciones
+                            privadas son las siguientes:<o:p></o:p></span></p>
+
+                    <ol style='margin-top:0cm' start=1 type=1>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Al
+                                conectarse a internet ser recomienda ocupar equipos y software que estén
+                                actualizados en sus últimas versiones e instalar parches seguridad en
+                                sistemas operativos y aplicaciones.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Utilizar
+                                contraseñas seguras, incluyendo mayúsculas, minúsculas, números y
+                                caracteres especiales.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Evitar
+                                ingresar a sitios desconocidos, que se vean sospechosas o que no sean
+                                confiables.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Minimizar
+                                el registro con datos personales en páginas web y aplicaciones que
+                                realmente utilice y le sean útiles. <o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Verificar
+                                que las páginas visitadas tengan el candado de seguridad tal como
+                                HTTPS://, especialmente si se envía información sensible como tarjetas de
+                                crédito.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Utilizar
+                                un antivirus actualizado en el dispositivo terminal que se utiliza para
+                                acceder a internet.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Cambiar
+                                las contraseñas de sus servicios en línea con frecuencia.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Evitar
+                                abrir y/o responder mensajes o correos de origen desconocido, sobre todo
+                                los que requieran sus datos personales.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Utilizar
+                                programas originales y de fuentes confiables.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>No
+                                hacer clic en enlaces contenidos en correos electrónicos no solicitados o
+                                que provengan de fuentes desconocidas.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'><span
+                                    style='mso-spacerun:yes'> </span>No hacer caso de mensajes cuyo contenido
+                                sea atractivo, de urgencia o exagerado, por ejemplo, entrega de premios de
+                                concursos en los que no participó, avisos de bancos acerca de adeudos que
+                                no existen, etc.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Proteja
+                                y no revele las contraseñas que utiliza en plataformas digitales.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'>Utilice
+                                herramientas que permitan un borrado seguro de información en los equipos
+                                de cómputo y procesamiento de datos que sean desechados por usted.<o:p></o:p></span>
+                        </li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;margin-bottom:
+     0cm;text-align:justify;line-height:150%;mso-list:l0 level1 lfo1;
+     border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;mso-border-shadow:
+     yes'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+     mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+     major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin'><span
+                                    style='mso-spacerun:yes'> </span>De ser necesario, comunicarse
+                                directamente con la institución de la que procedan los mensajes o correos
+                                electrónicos, a través de la información de contacto publicada en sitios
+                                oficiales.<o:p></o:p></span></li>
+                        <li class=MsoNormal style='color:black;mso-themecolor:text1;text-align:justify;
+     line-height:150%;mso-list:l0 level1 lfo1;border:none;mso-padding-alt:31.0pt 31.0pt 31.0pt 31.0pt;
+     mso-border-shadow:yes'><span style='mso-ascii-font-family:Calibri;
+     mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+     Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+     mso-bidi-theme-font:major-latin'><span style='mso-spacerun:yes'> </span>Se
+                                recomienda Instalar y utilizar herramientas de control parental para
+                                monitorear y controlar las actividades de los menores de edad en relación
+                                con el uso de internet.<o:p></o:p></span></li>
+                    </ol>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><b
+                            style='mso-bidi-font-weight:normal'><span style='mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:major-latin;mso-fareast-font-family:Arial;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:major-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:major-latin;color:black;mso-themecolor:text1'>4. MARCO
+                                LEGAL APLICABLE<o:p></o:p></span></b></p>
+
+                    <p class=MsoNormal style='text-align:justify;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>El presente Código se apega a lo dispuesto en
+                            la Ley Federal de Telecomunicaciones y Radiodifusión, así como en los
+                            Lineamientos para la gestión de tráfico y administración de red a que deberán
+                            sujetarse los concesionarios y autorizados que presten el servicio de acceso a
+                            Internet, publicados en el Diario Oficial de la Federación el 5 de julio de
+                            2021 y expedidos por el Instituto Federal de Telecomunicaciones.<o:p></o:p></span></p>
+
+                    <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>
+                            <o:p>&nbsp;</o:p>
+                        </span></p>
+
+                    <p class=MsoNormal align=right style='text-align:right;line-height:150%'><span style='mso-ascii-font-family:Calibri;mso-ascii-theme-font:major-latin;
+mso-fareast-font-family:Arial;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+major-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:major-latin;
+color:black;mso-themecolor:text1'>Versión 1.0, publicada el 18 de diciembre de
+                            2023<o:p></o:p></span></p>
+
+                </div>
+            </div>
+        </section><!-- End Derechos Minimos Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="text-white bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
