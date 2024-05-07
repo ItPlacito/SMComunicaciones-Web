@@ -269,6 +269,9 @@ section {
 .header .logo h1 span {
   color: var(--color-primary);
 }
+p {
+  text-align: left;
+}
 
 /*--------------------------------------------------------------
 # Desktop Navigation
