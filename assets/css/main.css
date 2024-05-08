@@ -2683,3 +2683,7 @@ p {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
+
+.confirm-button {
+  color: white !important;
+}

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
   document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       event.preventDefault();
       mobileNavToogle();
     })
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
-    el.addEventListener('click', function(event) {
+    el.addEventListener('click', function (event) {
       if (document.querySelector('.mobile-nav-active')) {
         event.preventDefault();
         this.classList.toggle('active');
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -117,8 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       let menuFilters = document.querySelectorAll('.portfolio-isotope .portfolio-flters li');
-      menuFilters.forEach(function(el) {
-        el.addEventListener('click', function() {
+      menuFilters.forEach(function (el) {
+        el.addEventListener('click', function () {
           document.querySelector('.portfolio-isotope .portfolio-flters .filter-active').classList.remove('filter-active');
           this.classList.add('filter-active');
           portfolioIsotope.arrange({
@@ -209,4 +209,68 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      const button = document.getElementById("button1");
+      button.disabled = true;
+      button.textContent = "Enviando...";
+      button.classList.add("btn-dark");
+      event.preventDefault();
+
+      // Obtiene los datos del formulario
+      const name = document.getElementById("name").value;
+      const subject = document.getElementById("subject").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      // Configura los datos para enviar el correo usando EmailJS
+      const data = {
+        service_id: "service_27kp60v",
+        template_id: "template_qi71iva",
+        template_params: {
+          user_name: name,
+          email: email,
+          message: message,
+          subject: subject,
+        },
+      };
+
+      // Envía el correo usando EmailJS
+      emailjs
+        .send(
+          "service_27kp60v", "template_qi71iva",
+          data.template_params,
+          "rwpp7OlBjWjhj_vTq"
+        )
+        .then(
+          function (response) {
+            //alert("¡Mensaje enviado correctamente!");
+            Swal.fire({
+              title: "¡Mensaje Enviado!",
+              text: "Nos pondremos en contacto contigo lo antes posible",
+              icon: "success",
+              confirmButtonText: "Volver al inicio",
+              confirmButtonColor: "#910203",
+              customClass: {
+                confirmButton: 'confirm-button'
+              }
+            }).then((result) => {
+              if (result.isConfirmed) {
+                // Aquí puedes realizar la acción si el usuario hizo clic en el botón de confirmación
+                window.location.href = "index.html";
+              }
+            });
+            // Puedes redirigir a una página de agradecimiento aquí si lo deseas.
+            button.disabled = false;
+            //window.location.href = "index.html";
+          },
+          function (error) {
+            alert(
+              "Hubo un error al enviar el mensaje. Por favor, inténtalo nuevamente."
+            );
+          }
+        );
+    });
 });
