@@ -8,7 +8,7 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #900601;
+  --color-primary: #910203;
   --color-secondary: #52565e;
 }
 
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: #900601;
+  color: #910203;
   text-decoration: none;
 }
 
@@ -177,8 +177,8 @@ section {
 }
 
 .scroll-top:hover {
-  background: #ffc732;
-  color: #fff;
+  background: #2e3135;
+  color: #d5d7da;
 }
 
 .scroll-top.active {
@@ -269,6 +269,7 @@ section {
 .header .logo h1 span {
   color: var(--color-primary);
 }
+
 p {
   text-align: left;
 }
@@ -660,7 +661,8 @@ p {
 }
 
 .get-started .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #2e3135;
+  color: #d5d7da;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1758,7 +1760,8 @@ p {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #2e3135;
+  color: #d5d7da;
 }
 
 @keyframes animate-loading {
@@ -2359,7 +2362,7 @@ p {
 }
 
 .blog .sidebar .search-form form button:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: #000;
 }
 
 .blog .sidebar .categories ul {
@@ -2572,8 +2575,8 @@ p {
 --------------------------------------------------------------*/
 .footer {
   color: #fff;
-  background: url("../img/footer-bg.jpg") top center no-repeat;
-  background-size: cover;
+  background: url("../img/hero-carousel/banner3.png") top center no-repeat;
+  background-size: auto;
   font-size: 14px;
   padding: 80px 0 60px 0;
   position: relative;
