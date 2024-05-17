@@ -8,7 +8,7 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #910203;
+  --color-primary: #bf0811;
   --color-secondary: #52565e;
 }
 
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: #910203;
+  color: #bf0811;
   text-decoration: none;
 }
 
@@ -254,7 +254,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 90px;
   margin-right: 6px;
 }
 
@@ -2612,6 +2612,11 @@ p {
   margin-bottom: 0;
   font-family: var(--font-primary);
   color: #fff;
+}
+
+.footer .footer-content .footer-info img {
+  max-height: 100px;
+  margin-right: 6px;
 }
 
 .footer .footer-content .social-links a {

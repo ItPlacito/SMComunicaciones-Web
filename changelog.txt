@@ -1,2 +1,6 @@
+
+Version: 1.0.1
+ - Cambios en logos, favicon y colores
+
 Version: 1.0.0
   - Inicialización del proyecto
