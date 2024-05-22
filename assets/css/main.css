@@ -2692,3 +2692,22 @@ p {
 .confirm-button {
   color: white !important;
 }
+
+/* Asegúrate de que el contenedor del mapa tiene un ancho del 100% y una altura relativa */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Asegúrate de que el iframe se ajusta al tamaño del contenedor */
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
